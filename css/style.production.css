@@ -149,8 +149,8 @@ button:focus,
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
 }
 
@@ -161,7 +161,7 @@ button:focus,
 
 * {
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .page-header {
@@ -175,14 +175,14 @@ button:focus,
 
 .page-header__item {
     -webkit-box-flex: 0;
-    -ms-flex: 0 1 200px;
-    flex: 0 1 200px;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
     -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     text-align: right;
 }
 
@@ -215,7 +215,7 @@ button:focus,
     }
 
     .grid__item {
-        background-color: lightgray;
+        background-color: #ffede8;
         width: auto;
         min-height: auto;
         margin: 0;
@@ -230,19 +230,19 @@ button:focus,
 
     .grid__item:hover {
         -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        transform: scale(1.05);
+            -ms-transform: scale(1.05);
+                transform: scale(1.05);
         /*slightly larger scale on hover*/
         cursor: pointer;
     }
 
     .grid__item:last-child {
         -ms-grid-column: 3;
-        grid-column-start: 3;
+            grid-column-start: 3;
         -ms-grid-column-span: 0;
         grid-column-end: 3;
         -ms-grid-row: 2;
-        grid-row-start: 2;
+            grid-row-start: 2;
         -ms-grid-row-span: 1;
         grid-row-end: 3;
     }
@@ -322,69 +322,69 @@ button:focus,
 } */
 .sun {
     -webkit-animation: 4s color-change infinite alternate linear;
-    animation: 4s color-change infinite alternate linear;
+            animation: 4s color-change infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move {
     from {
         -webkit-transform: translate(0, 50px);
-        transform: translate(0, 50px)
+                transform: translate(0, 50px)
     }
 
     to {
         -webkit-transform: translate(200px, 50px);
-        transform: translate(200px, 50px)
+                transform: translate(200px, 50px)
     }
 }
 
 @keyframes cloud-move {
     from {
         -webkit-transform: translate(0, 50px);
-        transform: translate(0, 50px)
+                transform: translate(0, 50px)
     }
 
     to {
         -webkit-transform: translate(200px, 50px);
-        transform: translate(200px, 50px)
+                transform: translate(200px, 50px)
     }
 }
 
 .cloud-front {
     -webkit-animation: 30s cloud-move infinite alternate linear;
-    animation: 30s cloud-move infinite alternate linear
+            animation: 30s cloud-move infinite alternate linear
 }
 
 @-webkit-keyframes cloud-move-reverse {
     from {
         -webkit-transform: translate(446px, 48px);
-        transform: translate(446px, 48px)
+                transform: translate(446px, 48px)
     }
 
     to {
         -webkit-transform: translate(100px, 48px);
-        transform: translate(100px, 48px)
+                transform: translate(100px, 48px)
     }
 }
 
 @keyframes cloud-move-reverse {
     from {
         -webkit-transform: translate(446px, 48px);
-        transform: translate(446px, 48px)
+                transform: translate(446px, 48px)
     }
 
     to {
         -webkit-transform: translate(100px, 48px);
-        transform: translate(100px, 48px)
+                transform: translate(100px, 48px)
     }
 }
 
 .cloud-back {
     -webkit-animation: 40s cloud-move-reverse infinite alternate linear;
-    animation: 40s cloud-move-reverse infinite alternate linear
+            animation: 40s cloud-move-reverse infinite alternate linear
 }
 
 .rotate {
     -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg)
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg)
 }
