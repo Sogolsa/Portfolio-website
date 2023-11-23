@@ -1,6 +1,6 @@
 "use strict"
 
-export default {
+module.exports = {
   "rules": {
     "at-rule-no-unknown": true,
     "block-no-empty": true,
@@ -88,7 +88,7 @@ export default {
     "function-parentheses-newline-inside": "always-multi-line",
     "function-parentheses-space-inside": "never-single-line",
     "function-whitespace-after": "always",
-    "indentation": 4,
+    "indentation": 2,
     "length-zero-no-unit": true,
     "max-empty-lines": 1,
     "media-feature-colon-space-after": "always",
