@@ -132,7 +132,7 @@ button:focus,
 }
 
 .button__secondary {
-    background-color: aquamarine;
+    background-color: #55c2da;
 }
 
 .navigation-list__item--active {
@@ -233,10 +233,10 @@ button:focus,
         margin: 0;
         padding: 10px;
         -webkit-transition: -webkit-transform 0.3s ease;
-        transition: -webkit-transform 0.3s ease;
+        transition: -webkit-transform 0.3s ease, transform 0.3s ease;
         -o-transition: transform 0.3s ease;
-        transition: transform 0.3s ease;
-        transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+        -webkit-transform: 0.3s ease;
+        transform: 0.3s ease;
 
         /* smooth transition */
     }
@@ -259,6 +259,8 @@ button:focus,
         grid-row-start: 2;
         -ms-grid-row-span: 1;
         grid-row-end: 3;
+        grid-column: 3;
+        grid-row: 2;
     }
 }
 
@@ -282,7 +284,6 @@ button:focus,
 }
 
 @media all and (max-width: 750px) {
-
     /* shared code */
     .grid {
         grid-gap: 10px;
