@@ -140,7 +140,7 @@ button:focus,
 
     /* Remove underline or decoration for the active item */
     font-weight: bold;
-    background-color: rgb(73, 181, 61);
+    background-color: #c2e6a6;
 }
 
 .profile__portrait {
@@ -233,10 +233,10 @@ button:focus,
         margin: 0;
         padding: 10px;
         -webkit-transition: -webkit-transform 0.3s ease;
-        transition: -webkit-transform 0.3s ease, transform 0.3s ease;
+        transition: -webkit-transform 0.3s ease;
         -o-transition: transform 0.3s ease;
-        -webkit-transform: 0.3s ease;
-        transform: 0.3s ease;
+        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 
         /* smooth transition */
     }
@@ -259,8 +259,6 @@ button:focus,
         grid-row-start: 2;
         -ms-grid-row-span: 1;
         grid-row-end: 3;
-        grid-column: 3;
-        grid-row: 2;
     }
 }
 
@@ -284,6 +282,7 @@ button:focus,
 }
 
 @media all and (max-width: 750px) {
+
     /* shared code */
     .grid {
         grid-gap: 10px;
