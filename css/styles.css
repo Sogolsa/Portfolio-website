@@ -201,7 +201,8 @@ textarea {
 }
 
 /* start grid fallback */
-.grid__item {
+.grid__item,
+.grid__item1 {
     display: inline-block;
     width: 33%;
 }
@@ -215,7 +216,8 @@ textarea {
         grid-gap: 20px;
     }
 
-    .grid__item {
+    .grid__item,
+    .grid__item1 {
         background-color: var(--gi-bg-color);
         width: auto;
         min-height: auto;
@@ -226,7 +228,8 @@ textarea {
         /* smooth transition */
     }
 
-    .grid__item:hover {
+    .grid__item:hover,
+    .grid__item1:hover {
         transform: scale(var(--grid-hover-scale));
 
         /* slightly larger scale on hover */
@@ -234,10 +237,17 @@ textarea {
     }
 
     .grid__item:last-child {
-        grid-column-start: 3;
-        grid-column-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 1;
         grid-row-start: 2;
         grid-row-end: 3;
+    }
+
+    .grid__item1:last-child {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 1;
     }
 }
 
