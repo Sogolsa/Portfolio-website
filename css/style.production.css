@@ -184,7 +184,6 @@ button:focus,
     width: 250px;
     margin-right: 40px;
     border-radius: 50%;
-
     /* create circular shape */
 }
 
@@ -203,6 +202,7 @@ button:focus,
 .profile {
     max-width: 700px;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 * {
@@ -241,7 +241,6 @@ button:focus,
 .navigation-list li {
     margin-left: 15px;
     display: inline-block;
-
     /* Adjust spacing between items */
 }
 
@@ -260,7 +259,7 @@ button:focus,
     text-align: center;
 }
 
-form {
+/* form {
     max-width: 400px;
     margin: 0 auto;
     text-align: left;
@@ -269,7 +268,7 @@ form {
 label {
     display: block;
     margin-bottom: 2px;
-}
+} */
 
 .contact-info a {
     text-decoration: none;

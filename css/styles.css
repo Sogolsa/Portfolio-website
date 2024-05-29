@@ -139,7 +139,6 @@ button:focus,
     width: var(--profile-portrait-width);
     margin-right: 40px;
     border-radius: var(--profile-portrait-border-radius);
-
     /* create circular shape */
 }
 
@@ -153,6 +152,7 @@ button:focus,
 .profile {
     max-width: var(--profile-max-width);
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 * {
@@ -184,7 +184,6 @@ button:focus,
 .navigation-list li {
     margin-left: 15px;
     display: inline-block;
-
     /* Adjust spacing between items */
 }
 
