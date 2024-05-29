@@ -1,14 +1,14 @@
 :root {
     --body-font-color: #201f1f;
-    --link-color: #4f0080;
-    --vistied-link-color: #02154d;
+    --link-color: navy;
+    --visited-link-color: #02154d;
     --active-link-color: #e50d0d;
     --button-font-color: black;
     --border-bottom-color: rgba(0, 0, 0, 0.3);
     --button-bg-color: cornflowerblue;
-    --button-secondary-bg-color: #55c2da;
-    --nlia-bg-color: #c2e6a6;
-    --nlia-font-weight: bold;
+    --button-secondary-bg-color: #6ba86b;
+    --nav-li-active-bg-color: #c2e6a6;
+    --nav-li-active-font-weight: bold;
     --ph-bg-color: #ebf7e2;
     --gi-bg-color: #ffede8;
     --body-font-weight: 400;
@@ -53,7 +53,7 @@ h3 {
 
 a:visited {
     /* visited link */
-    color: var(--vistied-link-color);
+    color: var(--visited-link-color);
 }
 
 a:link {
@@ -73,15 +73,16 @@ a:active {
 
 button,
 .button,
-.button__secondary {
+.button__secondary,
+.button-third {
     border: none;
     display: inline-block;
     font-family: inherit;
     font-size: var(--button-fs);
-    color: var(--button-font-color);
+    /* color: var(--button-font-color); */
     text-decoration: none;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 10px;
     border-bottom: 2px solid var(--border-bottom-color);
 
     /* combine transitions */
@@ -106,19 +107,32 @@ button:focus,
 
 .button {
     background-color: var(--button-bg-color);
+    color: var(--button-font-color);
+
 }
 
 .button__secondary {
     background-color: var(--button-secondary-bg-color);
+    width: 300px;
+
+}
+
+.button-third {
+    background-color: salmon;
+    color: black;
+}
+
+.navigation-list__item {
+    text-decoration: none;
 }
 
 .navigation-list__item--active {
     text-decoration: none;
-
     /* Remove underline or decoration for the active item */
-    font-weight: var(--nlia-font-weight);
-    background-color: var(--nlia-bg-color);
+    font-weight: var(--nav-li-active-font-weight);
+    background-color: var(--nav-li-active-bg-color);
 }
+
 
 .profile__portrait {
     float: left;
@@ -182,7 +196,7 @@ button:focus,
     text-align: center;
 }
 
-form {
+/* form {
     max-width: 400px;
     margin: 0 auto;
     text-align: left;
@@ -191,14 +205,29 @@ form {
 label {
     display: block;
     margin-bottom: 2px;
+} */
+
+.contact-info a {
+    text-decoration: none;
+    color: rgb(26, 26, 233);
+    font-size: 20px
 }
 
-input,
+.contact-info a:hover {
+    /* text-decoration: underline; */
+    font-weight: 650;
+}
+
+.contact-info p {
+    font-size: 20px;
+}
+
+/* input,
 textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 4px;
-}
+} */
 
 /* start grid fallback */
 .grid__item,
@@ -212,7 +241,8 @@ textarea {
 @supports (display: grid) {
     .grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        /* grid-template-columns: 1fr 1fr 1fr; */
         grid-gap: 20px;
     }
 
@@ -224,8 +254,17 @@ textarea {
         margin: 0;
         padding: var(--gi-padding);
         transition: transform 0.3s ease;
-
         /* smooth transition */
+    }
+
+    .grid__item img {
+        width: 100%;
+        /* Ensure image takes up full width of its container */
+        height: 400px;
+        /* Set a fixed height for the images */
+        object-fit: cover;
+        border-radius: 10px;
+        /* Add border-radius for rounded corners, adjust as needed */
     }
 
     .grid__item:hover,
@@ -237,9 +276,9 @@ textarea {
     }
 
     .grid__item:last-child {
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 2;
+        grid-column-start: 3;
+        grid-column-end: 2;
+        grid-row-start: 3;
         grid-row-end: 3;
     }
 
