@@ -269,6 +269,13 @@ label {
     display: block;
     margin-bottom: 2px;
 } */
+.skills {
+    margin-top: 50px;
+}
+
+.skills-label {
+    font-weight: bold;
+}
 
 .contact-info a {
     text-decoration: none;
