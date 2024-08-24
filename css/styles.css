@@ -273,6 +273,16 @@ textarea {
         /* Add border-radius for rounded corners, adjust as needed */
     }
 
+    .grid__item1 img {
+        width: 100%;
+        /* Ensure image takes up full width of its container */
+        height: 400px;
+        /* Set a fixed height for the images */
+        object-fit: cover;
+        border-radius: 10px;
+        /* Add border-radius for rounded corners, adjust as needed */
+    }
+
     .grid__item:hover,
     .grid__item1:hover {
         transform: scale(var(--grid-hover-scale));
