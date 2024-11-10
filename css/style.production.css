@@ -429,6 +429,44 @@ textarea {
 }
 
 @media all and (max-width: 750px) {
+    header {
+        text-align: center;
+        padding-left: 0;
+    }
+
+
+    nav ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .page-header {
+        display: -ms-grid;
+        display: grid;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .profile {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .profile a {
+        margin-bottom: 5px;
+    }
 
     /* shared code */
     .grid {
