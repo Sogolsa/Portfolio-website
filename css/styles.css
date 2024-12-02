@@ -329,11 +329,16 @@ textarea {
         padding-left: 0;
     }
 
-
     nav ul {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        padding-left: 0
+    }
+
+    .navigation-list li {
+        margin-left: 0;
     }
 
     .page-header {
