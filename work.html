@@ -1,288 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sogol Saadat - Portfolio</title>
-    <link rel="shortcut icon" href="img/favicon-v2.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon-v2.ico" type="image/x-icon" />
     <!--for css normalization-->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
     <!--Google font links-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <!--connecting style CSS sheet-->
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
+  </head>
 
-<body>
+  <body>
     <header class="page-header">
-        <!--Add your logo here-->
-        <img src="img/sogol-saadat-logo2.png" alt="Personal logo of Sogol Saadat" class="page-header__item">
-        <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem"
-                        class="navigation-list__item navigation-list__item--active">Work</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                </li>
-            </ul>
-        </nav>
+      <!--Add your logo here-->
+      <img
+        src="img/sogol-saadat-logo2.png"
+        alt="Personal logo of Sogol Saadat"
+        class="page-header__item"
+      />
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About Me</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!--Main content-->
-    <h1 style="text-align: center;">Work</h1>
-    <h2 style="text-align: center;">Web Development</h2>
+    <h1 style="text-align: center">Work</h1>
+    <h2 style="text-align: center">Web Development</h2>
     <section class="grid">
-        <div class="grid__item">
-            <h2>Beginner's Guide to Developing a RESTful API (Node.js, Express, MongoDB)</h2>
-            <img src="img\api-book.png"
-                alt="a picture representing the cover of Beginner's Guid to Developing an API with Node.js e-book" />
-            <p>This Beginner's Guide to Developing a RESTful API is a step by step guide that teaches you how to build
-                and
-                deploy a RESTful API from scratch using Node.js, Express.js and MongoDB. It covers essential steps for
-                preparing your API for production and deploying it to Heroku, while also guiding you through pushing
-                your code to GitHub for version control. With An overview of HTTP Status Codes, helping you understand
-                different types of responses between the client and server.This guide does not include user
-                authentication. It focuses on the core concepts of building and
-                deploying a RESTful API.
-            </p>
-            <a href="https://drive.google.com/file/d/1QrniZzqELvfCkgoxOwPxvuyX0Akt_LfD/view?usp=sharing" target="_blank"
-                class="button-third">Table of Content</a>
-        </div>
-        <div class="grid__item">
-            <h2>Thought Tracker Journal API</h2>
-            <img src="img\thought-tracker.jpg" alt="a picture representing the thought tracker api" />
-            <p>An API to help organizing thoughts to help with anxiety, in this API, users can list all of their
-                thoughts or worries by name, then they can add more details and
-                information about each thought, identifying potential problems, and coming up with possible solutions,
-                and they can also add a positive affirmation to help cope with their stress or the situation. For
-                privacy and security, all user input is encrypted, ensuring sensitive information remains protected.
-            </p>
-            <p>
-                Technologies used: Node.js, Express.js, MongoDB, Mongoose, REST API, Swagger, Postman.
-            </p>
-            <a href="https://thought-tracker-journal-4688a4169626.herokuapp.com/" target="_blank"
-                class="button-third">Demo</a>
-            <a href="https://github.com/Sogolsa/thought-processor-api" target="_blank" class="button-third">Github</a>
-        </div>
-        <div class="grid__item">
-            <h2>Exercise Data Web App</h2>
-            <img src="img\fitness-web-app.jpg" alt="a picture representing the exercise app" />
-            <p>This is a react app where I have fetched the exercises data from rapid api. In this app user can see the
-                list of all the exercises, search for specific exercise by name, body part, target muscle or equipment,
-                and they can click on each exercise to see instructions and more details about that exercise.
-            </p>
-            <p>
-                Technologies used: React, React Router, Material UI
-            </p>
-            <a href="https://exercise-data-app-fd8fef0ae055.herokuapp.com/" target="_blank"
-                class="button-third">Demo</a>
-            <a href="https://github.com/Sogolsa/fitness-app-react" target="_blank" class="button-third">Github</a>
-        </div>
-        <div class="grid__item">
-            <h2>Recipe App</h2>
-            <img src="img\recipe-app.jpg" alt="a picture representing the recipe app" />
-            <p>A recipe app using Django web framework. In this application PostgreSQL is used for the backend, HTML and
-                CSS and JavaScript are used for the front end. This application is dynamic
-                and multi-user, letting users sign up, and create their own content. It also has statistical dashboards,
-                implementing data analytics and data visualizations.
-            </p>
-            <p>
-                Technologies used: Python, Django, PostgreSQL, AWS S3 buckets
-            </p>
-            <a href="https://radiant-brook-87990-20d91401d7c4.herokuapp.com/" target="_blank"
-                class="button-third">Demo</a>
-            <a href="https://github.com/Sogolsa/recipe-app" target="_blank" class="button-third">Github</a>
-        </div>
+      <div class="grid__item">
+        <h2>Daily Calories and Macros Estimator</h2>
+        <img
+          src="img\screenshot-wide.png"
+          alt="a picture representing the Calorie Estimator app"
+        />
+        <p>
+          A React-vite app that let's the users to enter information needed to
+          estimate their daily calories and macros. In this app users can select
+          their activity level, goal, activity type, gender from a drop down
+          menu. This calculator is developed based on Precision Nutrition
+          formula for calculating calories and macros. In this app users can
+          toggle between the dark and light mode based on their preferences.
+          This app is a progressive web app (Web App)
+        </p>
+        <p>Technologies used: React, Vite, Material UI, Form validation</p>
+        <a
+          href="https://caloire-macro-estimator.vercel.app/"
+          target="_blank"
+          class="button-third"
+          >Demo</a
+        >
+        <a
+          href="https://github.com/Sogolsa/estimate-daily-fuel"
+          target="_blank"
+          class="button-third"
+          >Github</a
+        >
+      </div>
+      <div class="grid__item">
+        <h2>Thought Tracker Journal React</h2>
+        <img
+          src="img\thought-tracker-client.jpeg"
+          alt="a picture representing the Thought Tracker app"
+        />
+        <p>
+          The client side of Thought Tracker Journal API using React-vite and
+          Material UI. In this application users can sign up, log in, and enter
+          their journal in an organized way, all their data is encrypted based
+          on the API.
+        </p>
+        <p>Technologies used: React, CRA, Material UI</p>
+        <a
+          href="https://mind-organizer-easy-journaling.vercel.app/"
+          target="_blank"
+          class="button-third"
+          >Demo</a
+        >
+        <a
+          href="https://github.com/Sogolsa/ThoughtTracker-react"
+          target="_blank"
+          class="button-third"
+          >Github</a
+        >
+      </div>
+      <div class="grid__item">
+        <h2>
+          Beginner's Guide to Developing a RESTful API (Node.js, Express,
+          MongoDB)
+        </h2>
+        <img
+          src="img\api-book.png"
+          alt="a picture representing the cover of Beginner's Guid to Developing an API with Node.js e-book"
+        />
+        <p>
+          This Beginner's Guide to Developing a RESTful API is a step by step
+          guide that teaches you how to build and deploy a RESTful API from
+          scratch using Node.js, Express.js and MongoDB. It covers essential
+          steps for preparing your API for production and deploying it to
+          Heroku, while also guiding you through pushing your code to GitHub for
+          version control. With An overview of HTTP Status Codes, helping you
+          understand different types of responses between the client and
+          server.This guide does not include user authentication. It focuses on
+          the core concepts of building and deploying a RESTful API.
+        </p>
+        <a
+          href="https://drive.google.com/file/d/1QrniZzqELvfCkgoxOwPxvuyX0Akt_LfD/view?usp=sharing"
+          target="_blank"
+          class="button-third"
+          >Table of Content</a
+        >
+      </div>
+      <div class="grid__item">
+        <h2>Thought Tracker Journal API</h2>
+        <img
+          src="img\thought-tracker.jpg"
+          alt="a picture representing the thought tracker api"
+        />
+        <p>
+          An API to help organizing thoughts to help with anxiety, in this API,
+          users can list all of their thoughts or worries by name, then they can
+          add more details and information about each thought, identifying
+          potential problems, and coming up with possible solutions, and they
+          can also add a positive affirmation to help cope with their stress or
+          the situation. For privacy and security, all user input is encrypted,
+          ensuring sensitive information remains protected.
+        </p>
+        <p>
+          Technologies used: Node.js, Express.js, MongoDB, Mongoose, REST API,
+          Swagger, Postman.
+        </p>
 
-        <div class="grid__item">
-            <h2>Angular myFlix App</h2>
-            <img src="img\Angular-myFlix.png" alt="a picture representing the myFlix app" />
-            <p>The client-side for an application called myFlix
-                based on its existing server-side code (REST API and database), using Angular framework.
-            </p>
-            <p>
-                Technologies used: Angular, Angular Material, TypeScript, TypeDoc
-            </p>
-            <a href="https://sogolsa.github.io/myFlix-Angular-client/welcome" target="_blank"
-                class="button-third">Demo</a>
-            <a href="https://github.com/Sogolsa/myFlix-Angular-client" target="_blank" class="button-third">Github</a>
-        </div>
-        <div class="grid__item">
-            <h2>React myFlix App</h2>
-            <img src="img\myFlix-react3.jpg" alt="a picture representing the myFlix app" />
-            <p>The client-side for an application called myFlix
-                based on its existing server-side code (REST API and database), using React Library.
-                This application is hosted on Netlify.</p>
-            <p>
-                Technologies Used: React, React Router, React Bootstrap.
-            </p>
-            <a href="https://movieapp-bysogol.netlify.app/login" target="_blank" class="button-third">Demo</a>
-            <a href="https://github.com/Sogolsa/myFlix-client" target="_blank" class="button-third">Github</a>
-        </div>
-        <div class="grid__item">
-            <h2>Movie API</h2>
-            <img src="img\movie-api.png" alt="#" />
-            <p>The server-side component of a “movies” web application. The web
-                application will provide users with access to information about different
-                movies, directors, and genres. Users will be able to sign up, update their
-                personal information, and create a list of their favorite movies.
-            </p>
-            <p>Technologies Used: Node.js, Express, MongoDB, Mongoose, REST API, Postman,
-                JSDoc.
-            </p>
-            <a href="https://github.com/Sogolsa/movie_api" target="_blank" class="button-third">Github</a>
-        </div>
-        <div class="grid__item">
-            <h2>Chat App</h2>
-            <img src="img\chat-app2.JPG" alt="a picture representing the chat app" />
-            <p> A chat app for mobile devices using React Native. The app will
-                provide users with a chat interface and options to share images and their
-                location.
-            </p>
-            <p>Technologies Used: React Native, Expo, Google Firestore Database, Google Firebase
-                Authentication, Gifted Chat Library, Android Studio.
-            </p>
-            <a href="img\chat-app-demo.png" target="_blank" class="button-third">
-                Demo </a>
+        <a
+          href="https://github.com/Sogolsa/thought-processor-api"
+          target="_blank"
+          class="button-third"
+          >Github</a
+        >
+      </div>
+      <div class="grid__item">
+        <h2>Exercise Data Web App</h2>
+        <img
+          src="img\fitness-web-app.jpg"
+          alt="a picture representing the exercise app"
+        />
+        <p>
+          This is a react app where I have fetched the exercises data from rapid
+          api. In this app user can see the list of all the exercises, search
+          for specific exercise by name, body part, target muscle or equipment,
+          and they can click on each exercise to see instructions and more
+          details about that exercise.
+        </p>
+        <p>Technologies used: React, React Router, Material UI</p>
+        <a
+          href="https://exercise-data-app-fd8fef0ae055.herokuapp.com/"
+          target="_blank"
+          class="button-third"
+          >Demo</a
+        >
+        <a
+          href="https://github.com/Sogolsa/fitness-app-react"
+          target="_blank"
+          class="button-third"
+          >Github</a
+        >
+      </div>
+      <div class="grid__item">
+        <h2>Recipe App</h2>
+        <img
+          src="img\recipe-app.jpg"
+          alt="a picture representing the recipe app"
+        />
+        <p>
+          A recipe app using Django web framework. In this application
+          PostgreSQL is used for the backend, HTML and CSS and JavaScript are
+          used for the front end. This application is dynamic and multi-user,
+          letting users sign up, and create their own content. It also has
+          statistical dashboards, implementing data analytics and data
+          visualizations.
+        </p>
+        <p>Technologies used: Python, Django, PostgreSQL, AWS S3 buckets</p>
+        <a
+          href="https://radiant-brook-87990-20d91401d7c4.herokuapp.com/"
+          target="_blank"
+          class="button-third"
+          >Demo</a
+        >
+        <a
+          href="https://github.com/Sogolsa/recipe-app"
+          target="_blank"
+          class="button-third"
+          >Github</a
+        >
+      </div>
 
+      <div class="grid__item">
+        <h2>Angular myFlix App</h2>
+        <img
+          src="img\Angular-myFlix.png"
+          alt="a picture representing the myFlix app"
+        />
+        <p>
+          The client-side for an application called myFlix based on its existing
+          server-side code (REST API and database), using Angular framework.
+        </p>
+        <p>Technologies used: Angular, Angular Material, TypeScript, TypeDoc</p>
+        <a
+          href="https://sogolsa.github.io/myFlix-Angular-client/welcome"
+          target="_blank"
+          class="button-third"
+          >Demo</a
+        >
+        <a
+          href="https://github.com/Sogolsa/myFlix-Angular-client"
+          target="_blank"
+          class="button-third"
+          >Github</a
+        >
+      </div>
+      <div class="grid__item">
+        <h2>React myFlix App</h2>
+        <img
+          src="img\myFlix-react3.jpg"
+          alt="a picture representing the myFlix app"
+        />
+        <p>
+          The client-side for an application called myFlix based on its existing
+          server-side code (REST API and database), using React Library. This
+          application is hosted on Netlify.
+        </p>
+        <p>Technologies Used: React, React Router, React Bootstrap.</p>
+        <a
+          href="https://movieapp-bysogol.netlify.app/login"
+          target="_blank"
+          class="button-third"
+          >Demo</a
+        >
+        <a
+          href="https://github.com/Sogolsa/myFlix-client"
+          target="_blank"
+          class="button-third"
+          >Github</a
+        >
+      </div>
+      <div class="grid__item">
+        <h2>Movie API</h2>
+        <img src="img\movie-api.png" alt="#" />
+        <p>
+          The server-side component of a “movies” web application. The web
+          application will provide users with access to information about
+          different movies, directors, and genres. Users will be able to sign
+          up, update their personal information, and create a list of their
+          favorite movies.
+        </p>
+        <p>
+          Technologies Used: Node.js, Express, MongoDB, Mongoose, REST API,
+          Postman, JSDoc.
+        </p>
+        <a
+          href="https://github.com/Sogolsa/movie_api"
+          target="_blank"
+          class="button-third"
+          >Github</a
+        >
+      </div>
+      <div class="grid__item">
+        <h2>Chat App</h2>
+        <img
+          src="img\chat-app2.JPG"
+          alt="a picture representing the chat app"
+        />
+        <p>
+          A chat app for mobile devices using React Native. The app will provide
+          users with a chat interface and options to share images and their
+          location.
+        </p>
+        <p>
+          Technologies Used: React Native, Expo, Google Firestore Database,
+          Google Firebase Authentication, Gifted Chat Library, Android Studio.
+        </p>
+        <a href="img\chat-app-demo.png" target="_blank" class="button-third">
+          Demo
+        </a>
 
-            <a href="https://github.com/Sogolsa/chat-app" target="_blank" class="button-third">Github</a>
-        </div>
-        <div class="grid__item">
-            <h2>Meet App</h2>
-            <img src="img\meet-app-512.png" alt="a picture representing the meet app" />
-            <p> A serverless, progressive web application (PWA) with React using a
-                test-driven development (TDD) technique. The application uses the Google
-                Calendar API to fetch upcoming events.
-            </p>
-            <p>
-                Technologies Used: React, TDD, Google Calendar API, serverless functions(AWS Lambda),
-                Recharts, Atatus(performance monitoring), Jest.
-            </p>
-            <a href="https://sogolsa.github.io/meet/" target="_blank" class="button-third">Demo</a>
-            <a href="https://github.com/Sogolsa/meet" target="_blank" class="button-third">Github</a>
-        </div>
-        <div class="grid__item">
-            <h2>Pokedex app</h2>
-            <img src="img\pokemon1.png" alt="a pokemon picture" />
-            <p>
-                In this project I have created a Pokemon app that fetches data from an external API. Each Pokemon button
-                triggers a pop-up with the respective Pokemon's details.
-            </p>
-            <p>Technologies Used: HTML, CSS, JavaScript, Bootstrap, jQuery, External API</p>
-            <a href="https://sogolsa.github.io/js-app1-pokedex/" target="_blank" class="button-third">Demo</a>
-            <a href="https://sogolsa.github.io/Pokedex-caseStudy/" target="_blank" class="button-third">Case Study</a>
-        </div>
-        <div class="grid__item">
-            <h2>Calorie Calculator</h2>
-            <img src="img\calorie-calculator1.png" alt="a picture to represent the calorie calculator" />
-            <p>
-                In this project I have created a basic calorie calculator using scratch. You can simply
-                answer the questions asked and you will get calories and macros you need daily
-                based on your goals.
-            </p>
-            <p> Technologies Used: Scratch</p>
-            <a href="https://scratch.mit.edu/projects/868020716/" target="_blank" class="button-third">Demo</a>
-            <a href="https://scratch.mit.edu/projects/868020716/editor/" target="_blank" class="button-third">Scratch
-                Editor</a>
-
-        </div>
-        <div class="grid__item">
-            <h2>To Do List App</h2>
-            <img src="img\to-do-list.jpg" alt="to do list app" />
-            <p>
-                In this project I have created a simple to do list app with jquery.
-            </p>
-            <p>Technologies Used: HTML, CSS, JavaScript, jQuery</p>
-            <a href="https://sogolsa.github.io/t9-to-do-list-app/" target="_blank" class="button-third">Demo</a>
-            <a href="https://github.com/Sogolsa/t9-to-do-list-app" target="_blank" class="button-third">Github</a>
-        </div>
+        <a
+          href="https://github.com/Sogolsa/chat-app"
+          target="_blank"
+          class="button-third"
+          >Github</a
+        >
+      </div>
+      <div class="grid__item">
+        <h2>Meet App</h2>
+        <img
+          src="img\meet-app-512.png"
+          alt="a picture representing the meet app"
+        />
+        <p>
+          A serverless, progressive web application (PWA) with React using a
+          test-driven development (TDD) technique. The application uses the
+          Google Calendar API to fetch upcoming events.
+        </p>
+        <p>
+          Technologies Used: React, TDD, Google Calendar API, serverless
+          functions(AWS Lambda), Recharts, Atatus(performance monitoring), Jest.
+        </p>
+        <a
+          href="https://sogolsa.github.io/meet/"
+          target="_blank"
+          class="button-third"
+          >Demo</a
+        >
+        <a
+          href="https://github.com/Sogolsa/meet"
+          target="_blank"
+          class="button-third"
+          >Github</a
+        >
+      </div>
+      <div class="grid__item">
+        <h2>Pokedex app</h2>
+        <img src="img\pokemon1.png" alt="a pokemon picture" />
+        <p>
+          In this project I have created a Pokemon app that fetches data from an
+          external API. Each Pokemon button triggers a pop-up with the
+          respective Pokemon's details.
+        </p>
+        <p>
+          Technologies Used: HTML, CSS, JavaScript, Bootstrap, jQuery, External
+          API
+        </p>
+        <a
+          href="https://sogolsa.github.io/js-app1-pokedex/"
+          target="_blank"
+          class="button-third"
+          >Demo</a
+        >
+        <a
+          href="https://sogolsa.github.io/Pokedex-caseStudy/"
+          target="_blank"
+          class="button-third"
+          >Case Study</a
+        >
+      </div>
+      <div class="grid__item">
+        <h2>Calorie Calculator</h2>
+        <img
+          src="img\calorie-calculator1.png"
+          alt="a picture to represent the calorie calculator"
+        />
+        <p>
+          In this project I have created a basic calorie calculator using
+          scratch. You can simply answer the questions asked and you will get
+          calories and macros you need daily based on your goals.
+        </p>
+        <p>Technologies Used: Scratch</p>
+        <a
+          href="https://scratch.mit.edu/projects/868020716/"
+          target="_blank"
+          class="button-third"
+          >Demo</a
+        >
+        <a
+          href="https://scratch.mit.edu/projects/868020716/editor/"
+          target="_blank"
+          class="button-third"
+          >Scratch Editor</a
+        >
+      </div>
+      <div class="grid__item">
+        <h2>To Do List App</h2>
+        <img src="img\to-do-list.jpg" alt="to do list app" />
+        <p>
+          In this project I have created a simple to do list app with jquery.
+        </p>
+        <p>Technologies Used: HTML, CSS, JavaScript, jQuery</p>
+        <a
+          href="https://sogolsa.github.io/t9-to-do-list-app/"
+          target="_blank"
+          class="button-third"
+          >Demo</a
+        >
+        <a
+          href="https://github.com/Sogolsa/t9-to-do-list-app"
+          target="_blank"
+          class="button-third"
+          >Github</a
+        >
+      </div>
     </section>
-    <h2 style="text-align: center;">Data Analysis</h2>
+    <h2 style="text-align: center">Data Analysis</h2>
     <section class="grid">
-        <div class="grid__item1">
-            <h2>E-commerce Data In SQL</h2>
-            <img src="img\ecommerce-sql.png" alt="e-commerce data" />
-            <p>
-                In this project I have explored and analyzed e-commerce data.
-            </p>
-            <a href="https://github.com/Sogolsa/Projects/blob/main/E-commerce.sql" target="_blank"
-                class="button-third">See project</a>
-        </div>
-        <div class="grid__item1">
-            <h2>Analysis in R</h2>
-            <img src="img\analysis-R.png" alt="fitbit tracker analysis in R" />
-            <p>
-                In this project I have analyzed and visualized Fitbit Fitness Tracker data with R.
-            </p>
-            <a href="https://www.kaggle.com/code/sogolsaadat/bellabeat-project" target="_blank" class="button-third">See
-                project</a>
-        </div>
-        <div class="grid__item1">
-            <h2>Python-Predictive Analysis</h2>
-            <img src="img\predictive-python.png" alt="Python predictive analysis" />
-            <p>
-                In this project I built a logistic regression model to predict if the client will subscribe to a term
-                deposit.
-            </p>
-            <a href="https://github.com/Sogolsa/Projects/blob/main/Marketing-Predictive-Analysis-LogisticRegression.ipynb"
-                target="_blank" class="button-third">See
-                project</a>
-        </div>
+      <div class="grid__item1">
+        <h2>E-commerce Data In SQL</h2>
+        <img src="img\ecommerce-sql.png" alt="e-commerce data" />
+        <p>In this project I have explored and analyzed e-commerce data.</p>
+        <a
+          href="https://github.com/Sogolsa/Projects/blob/main/E-commerce.sql"
+          target="_blank"
+          class="button-third"
+          >See project</a
+        >
+      </div>
+      <div class="grid__item1">
+        <h2>Analysis in R</h2>
+        <img src="img\analysis-R.png" alt="fitbit tracker analysis in R" />
+        <p>
+          In this project I have analyzed and visualized Fitbit Fitness Tracker
+          data with R.
+        </p>
+        <a
+          href="https://www.kaggle.com/code/sogolsaadat/bellabeat-project"
+          target="_blank"
+          class="button-third"
+          >See project</a
+        >
+      </div>
+      <div class="grid__item1">
+        <h2>Python-Predictive Analysis</h2>
+        <img src="img\predictive-python.png" alt="Python predictive analysis" />
+        <p>
+          In this project I built a logistic regression model to predict if the
+          client will subscribe to a term deposit.
+        </p>
+        <a
+          href="https://github.com/Sogolsa/Projects/blob/main/Marketing-Predictive-Analysis-LogisticRegression.ipynb"
+          target="_blank"
+          class="button-third"
+          >See project</a
+        >
+      </div>
 
-        <div class="grid__item1">
-            <h2>Data Cleaning In SQL</h2>
-            <img src="img\sql-cleaning.png" alt="SQL" />
-            <p>
-                In this project I have taken raw hotel bookings data and transform it in SQL server to make it more
-                usable for analysis.
-            </p>
-            <a href="https://github.com/Sogolsa/Cleaning_data_SQL/blob/main/SQLQuery_Hotel_Bookings_Cleaning_Project.sql"
-                target="_blank" class="button-third">See
-                project</a>
-        </div>
-        <div class="grid__item1">
-            <h2>Prepare, Process and Analyze E-Commerce Data With SQL</h2>
-            <img src="img\analyze-ecommerce-sql.png" alt="SQL" />
-            <p>
-                In this project I have cleaned, explored and analyzed Olist Brazilian e-commerce data and find monthly
-                revenues for each year and
-                each product category.
-            </p>
-            <a href="https://github.com/Sogolsa/Olist_e-commerce_SQL_query/blob/main/E-Commerce-SQL-Query.sql"
-                target="_blank" class="button-third">See
-                project</a>
-        </div>
-
+      <div class="grid__item1">
+        <h2>Data Cleaning In SQL</h2>
+        <img src="img\sql-cleaning.png" alt="SQL" />
+        <p>
+          In this project I have taken raw hotel bookings data and transform it
+          in SQL server to make it more usable for analysis.
+        </p>
+        <a
+          href="https://github.com/Sogolsa/Cleaning_data_SQL/blob/main/SQLQuery_Hotel_Bookings_Cleaning_Project.sql"
+          target="_blank"
+          class="button-third"
+          >See project</a
+        >
+      </div>
+      <div class="grid__item1">
+        <h2>Prepare, Process and Analyze E-Commerce Data With SQL</h2>
+        <img src="img\analyze-ecommerce-sql.png" alt="SQL" />
+        <p>
+          In this project I have cleaned, explored and analyzed Olist Brazilian
+          e-commerce data and find monthly revenues for each year and each
+          product category.
+        </p>
+        <a
+          href="https://github.com/Sogolsa/Olist_e-commerce_SQL_query/blob/main/E-Commerce-SQL-Query.sql"
+          target="_blank"
+          class="button-third"
+          >See project</a
+        >
+      </div>
     </section>
 
     <footer class="page-footer">
-        <p>Find me on</p>
-        <div class="social-media">
-            <!--Github logo-->
-            <a href="https://github.com/Sogolsa" target="_blank"><img src="img/github-square-icon.svg" alt="Github"></a>
-            <!--Twitter logo-->
-            <a href="https://twitter.com/sogollls" target="_blank"> <img src="img/twitter-icon.svg" alt="Twitter"></a>
-            <!--linkedin logo-->
-            <a href="https://www.linkedin.com/in/sogol-saadat/" target="_blank"><img src="img/linkedin-logo.svg"
-                    alt="Linkedin"></a>
-        </div>
-        <a href="#">Back to top</a>
+      <p>Find me on</p>
+      <div class="social-media">
+        <!--Github logo-->
+        <a href="https://github.com/Sogolsa" target="_blank"
+          ><img src="img/github-square-icon.svg" alt="Github"
+        /></a>
+        <!--Twitter logo-->
+        <a href="https://twitter.com/sogollls" target="_blank">
+          <img src="img/twitter-icon.svg" alt="Twitter"
+        /></a>
+        <!--linkedin logo-->
+        <a href="https://www.linkedin.com/in/sogol-saadat/" target="_blank"
+          ><img src="img/linkedin-logo.svg" alt="Linkedin"
+        /></a>
+      </div>
+      <a href="#">Back to top</a>
     </footer>
 
     <script src="js/tota11y.min.js"></script>
-</body>
-
+  </body>
 </html>
